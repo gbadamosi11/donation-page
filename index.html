@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <title>Donation web page</title> 
+    <title>Donation web page</title>
 </head>
-<body>   
+<body>
   <div class="container theme-background-white main-body">
     <div class="col-md-12">
       <div class="row donate-bar">  
@@ -51,8 +51,8 @@
               LEARN MORE<i class="fa fa-chevron-right margin-left"></i>
             </a></li>
           </ul>
-          <!-- Modal -->
-          <div id="myModal" class="modal fade" role="dialog">
+          </div>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header text-center theme-background-blue">
@@ -61,9 +61,46 @@
                   <h1 style="font-size: 5.5em; margin-top: 0;">$<span id="price"></span></h1>
                   <em>Thank you!</em>
                 </div>
+                <div class="modal-body">
+                  <div class="row">  
+                    <section class="col-md-12">
+                      <form>
+                        <fieldset class="col-md-6">
+                          <legend>
+                            Your personal info
+                          </legend>
+                          <label>Your Name</label>
+                          <input type="string" class="form-control">
+                          <label>Your email</label>
+                          <input type="email" class="form-control">
+                          <label>Address</label>
+                          <input type="text" class="form-control">
+                          <label>City, State, Zip Code</label>
+                          <input type="text" class="form-control">
+                        </fieldset>
+                        <fieldset class="col-md-6">
+                          <legend>
+                            Credit Card Information
+                          </legend>
+                          <label for="card-number">Credit Card Number</label>
+                          <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="form-control card-number" id="card-number">
+                          <label for="card-number">Expiration Date</label>
+                          <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="form-control card-expiration" id="card-expiration">
+                          <label for="card-number">CVV Number</label>
+                          <input placeholder="CVV" pattern="[0-9]*" type="text" class="form-control card-cvv" id="card-cvv">
+                          <label for="card-number">Billing Zip Code</label>
+                          <input placeholder="ZIP" pattern="[0-9]*" type="text" class="form-control card-zip" id="card-zip">
+                        </fieldset>
+                      </form>
+                    </section>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-green">CONTINUE</button>
+                </div>
               </div>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
