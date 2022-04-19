@@ -19,31 +19,31 @@
         <div class="col-md-8">
           <ul class="nav navbar-nav navbar-left donate-buttons" id="donate-buttons">
             <li><a href="#">
-              <button class="btn-blue active" data-dollars='25' data-impact="Covers housing or counseling services for one person">
+              <button id="donate-amount" class="btn-blue active" data-dollars='25' data-impact="Covers housing or counseling services for 1 person">
                 $25
               </button>
             </a></li>
             <li><a href="#">
-              <button class="btn-blue" data-dollars='50' data-impact="Covers housing or counseling services for two people">
+              <button id="donate-amount" class="btn-blue" data-dollars='50' data-impact="Covers housing or counseling services for 2 people">
                 $50
               </button>
             </a></li>
             <li><a href="#">
-              <button class="btn-blue" data-dollars='100' data-impact="Covers housing or counseling services for four people">
+              <button id="donate-amount" id="donate" class="btn-blue" data-dollars='100' data-impact="Covers housing or counseling services for 4 people">
                 $100
               </button>
             </a></li>
             <li id="other"><a href="#">
-              <button class="btn-blue-other" data-dollars='other' data-impact="Thank you!">
+              <button id="donate-amount" class="btn-blue-other" data-dollars='other' data-impact="Thank you!">
                 OTHER
               </button>
             </a></li>
             <li id="other-input">
               <span>$</span>
-             <input data-impact="That’s great. Thank you!">
+             <input type="text" data-impact="That’s great. Thank you!">
             </li>
             <li><a href="#">
-              <button class="btn-green" data-toggle="modal" data-target="#myModal">
+              <button id="donate" class="btn-green" data-toggle="modal" data-target="#myModal">
                 DONATE
               </button>
             </a></li>
@@ -58,7 +58,7 @@
                 <div class="modal-header text-center theme-background-blue">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   <h2>You’re Donating:</h2>
-                  <h1 style="font-size: 5.5em; margin-top: 0;">$<span id="price"></span></h1>
+                  <h1 style="font-size: 5.5em; margin-top: 0;"><span id="price"></span></h1>
                   <em>Thank you!</em>
                 </div>
                 <div class="modal-body">
